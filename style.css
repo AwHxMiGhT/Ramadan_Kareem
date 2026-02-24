@@ -1,0 +1,89 @@
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+}
+
+/* صفحة اللوج إن مع خلفية مخصصة */
+.login-page{
+    background:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("ramadan/Ramadan\ Mubarak.jpg") center/cover no-repeat;
+
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* صندوق اللوج إن */
+.login-box{
+    background: rgba(0,0,0,0.8);
+    padding:40px;
+    border-radius:20px;
+    text-align:center;
+    width:320px;
+    box-shadow:0 0 25px gold;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:none;
+    border-radius:10px;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    background:gold;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#ffd700;
+    transform:scale(1.05);
+}
+
+/* الصفحة التانية */
+.video-page{
+    display:none;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:black;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+
+video{
+    width:80%;
+    max-width:800px;
+    border-radius:20px;
+    box-shadow:0 0 20px gold;
+}
+
+.message{
+    margin-top:20px;
+    font-size:28px;
+    text-align:center;
+}
+
+.made{
+    position:absolute;
+    bottom:15px;
+    font-size:12px;
+}

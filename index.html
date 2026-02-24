@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramadan Kareem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- صفحة اللوج إن -->
+    <div class="login-page" id="loginPage">
+        <div class="login-box">
+            <h2>🌙 طالما بعتلك الرسالة دى اعرف انك حبيبي 😍❤️❤️❤️ 🌙</h2>
+            <input type="email" id="email" placeholder="اكتب الإيميل">
+            <input type="password" id="password" placeholder="اكتب الباسورد">
+            <button onclick="goToVideo()">دخول</button>
+        </div>
+    </div>
+
+    <!-- الصفحة التانية -->
+    <div class="video-page" id="videoPage">
+        <video id="myVideo" autoplay muted>
+            <source src="ramadan/Ramadan.mp4" type="video/mp4">
+        </video>
+
+        <div class="message">
+            كل سنة وانت طيب ❤️ <br>
+            Ramadan Kareem 🌙
+        </div>
+
+        <div class="made">Made by Abdelrhman Waleed</div>
+    </div>
+
+<script>
+function goToVideo(){
+
+    let password = document.getElementById("password").value;
+
+    if(password === "ramadan kareem"){
+        document.getElementById("loginPage").style.display = "none";
+        document.getElementById("videoPage").style.display = "flex";
+
+        let video = document.getElementById("myVideo");
+        video.muted = false;
+        video.play();
+
+    }else{
+        alert("الباسورد غلط ❌ جرب تاني");
+    }
+}
+</script>
+
+</body>
+</html>
